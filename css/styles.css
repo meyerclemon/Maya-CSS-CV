@@ -1,0 +1,87 @@
+body {
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    margin: 50px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    font-size: 5rem;
+    color: #66BFBF;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+    color: #66BFBF;
+    font-weight: normal;
+
+}
+
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: #11999E;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* fonts 
+font-family: 'La Belle Aurore', cursive;
+font-family: 'Marck Script', cursive;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Sacramento', cursive;
+font-family: 'Sofia', cursive;
+*/
+
+/* Classes */
+
+.top-container {
+    background-color: rgb(219, 247, 250);
+    position: relative;
+    padding-top: 100px;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 50px;
+
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+    
+}
+
+.profile-img {
+    width: 20%;
+}
+
+.hot-img {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.hat-img {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+
+}
