@@ -45,7 +45,7 @@ hr {
     border: dotted #EAF6F6 4px;
     border-bottom: none;
     width: 4%;
-    margin: 100px auto;
+    margin: 80px auto;
 }
 
 a {
@@ -85,11 +85,14 @@ a:hover {
 
 /* ************Navigation Bar************  */
 .navbar {
-    padding: 0 3%;
-    height: 40px;
+background-color: #EAF6F6;
 }
 
 
+/* Middle Container  */
+#about {
+    margin: 10% auto;
+}
 
 /* ************Skill Row************  */
 
@@ -192,4 +195,24 @@ a:hover {
     background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
+}
+
+
+@media (max-width: 991px) {
+
+
+.middle-container {
+    margin-top: 0;
+}
+.skill-row {
+    width: 75%;
+}
+.profile {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.contact-message {
+    width: 75%;
+}
 }
