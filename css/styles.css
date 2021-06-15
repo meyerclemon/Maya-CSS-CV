@@ -45,7 +45,7 @@ hr {
     border: dotted #EAF6F6 4px;
     border-bottom: none;
     width: 4%;
-    margin: 80px auto;
+    margin: 10% auto;
 }
 
 a {
@@ -74,7 +74,8 @@ a:hover {
 }
 
 .bottom-container {
-    padding: 0px 0 20px;
+    background-color: rgb(219, 247, 250);
+
 }
 
 
@@ -86,6 +87,7 @@ a:hover {
 /* ************Navigation Bar************  */
 .navbar {
 background-color: #EAF6F6;
+height: 10%;
 }
 
 
@@ -104,6 +106,21 @@ background-color: #EAF6F6;
 
 /* ************Contact and Footer ************  */
 
+
+.email-section {
+    text-align: left;
+    margin-left: 20%;
+}
+
+.form {
+    text-align: left;
+    padding-top: 7%;
+}
+
+.form-floating {
+    padding-bottom: 10px;
+}
+
 .footer-section {
     background-color: #66BFBF;
     margin: 10% 0 0 0;
@@ -114,6 +131,10 @@ background-color: #EAF6F6;
     color: #EAF6F6;
     font-size: 0.75rem;
     padding: 20px 0;
+}
+
+.contact-row {
+    padding-top: 5%;
 }
 
 .contact-message {
@@ -140,6 +161,15 @@ background-color: #EAF6F6;
 
 }
 
+.contact-top-cloud {
+margin: 5% 25% 5% 0;
+}
+
+.contact-bottom-cloud {
+    margin: 0 0 0 25%;
+}
+
+
 .profile-img {
     margin: auto 0 3% 0;
     width: 200px;
@@ -160,7 +190,11 @@ background-color: #EAF6F6;
 
 .social-icon {
     margin: 15px 10px;
-    color: #EAF6F6;
+    color: #66BFBF;
+}
+
+.social-links {
+    margin-left: -50px;
 }
 
 .m-icon {
@@ -169,6 +203,10 @@ background-color: #EAF6F6;
 }
 
 /* ************Buttons************  */
+
+.btn-primary {
+    margin: auto;
+}
 
 .btn {
     background: #11cdd4;
@@ -185,6 +223,7 @@ background-color: #EAF6F6;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
+    margin-left: 0;
 }
 
 .btn:hover {
@@ -214,5 +253,14 @@ background-color: #EAF6F6;
 
 .contact-message {
     width: 75%;
+
 }
+
+.email-section {
+    margin-left: 10%;
+}
+.form {
+    margin-left: 10%;
+}
+
 }
