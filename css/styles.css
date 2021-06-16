@@ -130,7 +130,6 @@ a:hover {
 }
 
 
-
 .contact-row {
     padding: 5% 0 10% 0;
     /* background-color: #ffffff; */
@@ -144,7 +143,7 @@ a:hover {
 
 .form-section {
     text-align: left;
-    margin-top: 12%;
+    margin-top: 10%;
 
 }
 
@@ -259,7 +258,7 @@ a:hover {
 
 
 
-@media (min-width: 824px) and (max-width: 991px) {
+@media (max-width: 991px) {
 
     .top-container {
         padding-top: 15%;
@@ -278,7 +277,7 @@ a:hover {
     }
 
     .profile {
-        width: 60%;
+        width: 75%;
         margin: 10% auto;
     }
 
