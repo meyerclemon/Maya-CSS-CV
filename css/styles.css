@@ -38,6 +38,7 @@ h5 {
 p {
     font-family: 'Roboto', sans-serif;
     line-height: 2;
+
 }
 
 
@@ -66,6 +67,7 @@ a:hover {
     padding-right: 0;
     padding-left: 0;
 }
+
 .top-container {
     background-color: rgb(219, 247, 250);
     position: relative;
@@ -79,7 +81,7 @@ a:hover {
 
 .bottom-container {
     background-color: rgb(219, 247, 250);
-
+    padding-top: 5%;
 }
 
 .pro {
@@ -89,21 +91,27 @@ a:hover {
 
 /* ************Navigation Bar************  */
 .navbar {
-background-color: rgb(219, 247, 250);
-height: 10%;
-padding: 0 5% 0 5%;
+    background-color: rgb(219, 247, 250);
+    height: 10%;
+    padding: 0 5% 0 5%;
 }
 
 
-/* Middle Container  */
+/* About / Profile  */
+
 #about {
     margin: 10% auto 0 auto;
+}
+
+.profile {
+    width: 50%;
+    margin: auto;
 }
 
 /* ************Skill Row************  */
 
 .skill-row {
-    width: 50%;
+    width: 60%;
     margin: 100px auto 100px auto;
     text-align: left;
 }
@@ -111,39 +119,44 @@ padding: 0 5% 0 5%;
 /* ************Contact and Footer ************  */
 
 
+#contact {
+    margin: 50px auto 100px auto
+}
+
+.contact-top {
+    margin: 40px auto 40px auto;
+    /* text-align: right; */
+    width: 50%;
+}
+
+
+
+.contact-row {
+    padding: 5% 0 10% 0;
+    /* background-color: #ffffff; */
+}
+
 .email-section {
     text-align: left;
     margin-left: 20%;
 
 }
 
-.form {
+.form-section {
     text-align: left;
+    margin-top: 12%;
 
-}
-
-.contact-row {
-    padding: 10% 0 10% 0;
-    background-color: #ffffff;
-}
-
-.contact-message {
-    width: 40%;
-    margin: 40px auto 40px auto;
-}
-
-#contact {
-    margin: 50px auto 100px auto
 }
 
 .footer-section {
     background-color: #66BFBF;
+    padding: 5% 0 5% 0;
+    margin-bottom: 0;
 }
 
 .copyright {
     color: #EAF6F6;
     font-size: 0.75rem;
-    padding: 20px 0;
 }
 
 /* ************Images************  */
@@ -162,16 +175,19 @@ padding: 0 5% 0 5%;
 }
 
 .contact-top-cloud {
-margin: 5% 40% 5% 0;
+    margin: 0 50% -7% 0;
+    z-index: 1;
 }
 
 .contact-bottom-cloud {
-    margin: 0 0 5% 40%;
+    position: absolute;
+    margin: 0 0 0 20%;
+    z-index: 1;
 }
 
 
 .profile-img {
-    margin: auto 0 3% 0;
+    margin: auto 0 10% 0;
     width: 200px;
 }
 
@@ -239,31 +255,66 @@ margin: 5% 40% 5% 0;
 }
 
 
-@media (max-width: 991px) {
+
+@media (min-width: 824px) and (max-width: 991px) {
+
+    .top-container {
+        padding-top: 15%;
+    }
+
+    .middle-container {
+        margin-top: 0;
+    }
+
+    .bottom-container {
+        padding-top: 5%;
+    }
+
+    .navbar {
+        background-color: transparent;
+    }
+
+    .profile {
+        width: 60%;
+        margin: 10% auto;
+    }
+
+    .profile-img {
+        margin-bottom: 10%;
+        width: 50%;
+    }
+
+    .skill-row {
+        width: 75%;
+    }
 
 
-.middle-container {
-    margin-top: 0;
-}
-.skill-row {
-    width: 75%;
-}
-.profile {
-    width: 75%;
-    margin: 0 auto;
-}
+.contact-bottom-cloud {
+    position: absolute;
+margin: 0 0 0 15%;
+} 
 
-.contact-message {
-    width: 75%;
-    margin-bottom: 5%;
+    .contact-message {
+        width: 40%;
+        margin-bottom: 5%;
+        /* text-align: right; */
+    }
 
-}
 
-.email-section {
-    margin-left: 10%;
-}
-.form {
-    margin-left: 10%;
-}
+    .email-section {
+        width: 50%;
+        margin-left: 10%;
+    }
+
+    .form-section {
+        margin: 0 10%;
+    }
 
 }
+
+/* @media (min-width: 411px ) and (max-width: 823px) {
+
+    .top-container {
+        margin-top: 100%;
+    }
+} */
