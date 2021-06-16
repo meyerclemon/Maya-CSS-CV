@@ -78,6 +78,14 @@ a:hover {
 
 }
 
+.col-lg-6 {
+    margin-top: 12%;
+    z-index: 1;
+}
+
+.col-lg-12 {
+    z-index: 1;
+}
 
 .pro {
     text-decoration: underline;
@@ -86,8 +94,8 @@ a:hover {
 
 /* ************Navigation Bar************  */
 .navbar {
-background-color: #EAF6F6;
-height: 10%;
+    background-color: #EAF6F6;
+    height: 10%;
 }
 
 
@@ -106,6 +114,23 @@ height: 10%;
 
 /* ************Contact and Footer ************  */
 
+
+#contact {
+    margin: 50px auto 100px auto
+}
+
+.contact-top {
+    margin: 40px auto 5% auto;
+    z-index: 1;
+    width: 60%;
+}
+
+
+.contact-row {
+    padding: 0 0 5% 0;
+    /* margin-bottom: -10%; */
+    /* background-color: #ffffff; */
+}
 
 .email-section {
     text-align: left;
@@ -159,7 +184,7 @@ height: 10%;
 }
 
 .contact-top-cloud {
-margin: 5% 40% 5% 0;
+    margin: 5% 40% 5% 0;
 }
 
 .contact-bottom-cloud {
@@ -172,7 +197,13 @@ margin: 5% 40% 5% 0;
     width: 200px;
 }
 
-.hot-img {
+.fa-code {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.fa-eye {
     width: 25%;
     float: left;
     margin-right: 30px;
@@ -182,7 +213,7 @@ margin: 5% 40% 5% 0;
     width: 25%;
     float: right;
     margin-left: 30px;
-
+    z-index: 1;
 }
 
 .social-icon {
@@ -197,6 +228,12 @@ margin: 5% 40% 5% 0;
 .m-icon {
     margin: 15px 10px;
     padding-bottom: 12px;
+}
+
+.contact-mountain {
+    position: absolute;
+    margin: -10% 35% 20% 30%;
+    width: auto;
 }
 
 /* ************Buttons************  */
@@ -236,30 +273,93 @@ margin: 5% 40% 5% 0;
 }
 
 
-@media (max-width: 991px) {
+
+@media (max-width: 990px) {
+
+    h1 {
+        font-size: 7rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h5 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.75rem;
+    }
+
+    .top-container {
+        padding-top: 15%;
+    }
+
+    .middle-container {
+        margin-top: 0;
+    }
+
+    .bottom-container {
+        padding-top: 5%;
+    }
+
+    .col-lg-6 {
+        margin-top: 0;
+    }
+
+    .navbar {
+        background-color: transparent;
+    }
+
+    .profile {
+        width: 75%;
+        margin: 10% auto;
+    }
+
+    .profile-img {
+        margin-bottom: 10%;
+        width: 50%;
+    }
+
+    .skill-row {
+        width: 75%;
+    }
+
+    .contact-top-cloud {
+        margin-top: 5%
+    }
+
+    .contact-bottom-cloud {
+        position: absolute;
+        margin: -5% 0 0 20%;
+    }
 
 
-.middle-container {
-    margin-top: 0;
-}
-.skill-row {
-    width: 75%;
-}
-.profile {
-    width: 75%;
-    margin: 0 auto;
-}
+    .contact-message {
+        width: 75%;
+        margin-bottom: 5%;
+        z-index: 1;
+    }
 
-.contact-message {
-    width: 75%;
 
-}
+    .email-section {
+        width: 50%;
+        margin-left: 10%;
+        margin-top: 15%;
+    }
 
-.email-section {
-    margin-left: 10%;
-}
-.form {
-    margin-left: 10%;
-}
+    .contact-message {
+        width: 75%;
 
+    }
 }
+    @media (min-width: 922px) and (max-width: 1266px) {
+        .navbar {
+            height: 3%;
+        }
+    }
