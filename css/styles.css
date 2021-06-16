@@ -260,6 +260,22 @@ a:hover {
 
 @media (max-width: 991px) {
 
+    h1 {
+        font-size: 7rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    h5 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size:2rem;
+    }
     .top-container {
         padding-top: 15%;
     }
@@ -290,13 +306,16 @@ a:hover {
         width: 75%;
     }
 
+    /* .bottom-cloud {
+        margin-top: 15%;
+    } */
 .contact-bottom-cloud {
     position: absolute;
 margin: 0 0 0 15%;
 } 
 
     .contact-message {
-        width: 40%;
+        width: 75%;
         margin-bottom: 5%;
         /* text-align: right; */
     }
