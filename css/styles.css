@@ -65,7 +65,7 @@ a:hover {
 .top-container {
     background-color: rgb(219, 247, 250);
     position: relative;
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 
@@ -74,7 +74,7 @@ a:hover {
 }
 
 .bottom-container {
-    background-color: rgb(219, 247, 250);
+    /* padding-top:250px; */
 
 }
 
@@ -84,6 +84,8 @@ a:hover {
 }
 
 .col-lg-12 {
+    background-color: rgb(219, 247, 250);
+padding-top: 100px;
     z-index: 1;
 }
 
@@ -94,12 +96,11 @@ a:hover {
 
 /* ************Navigation Bar************  */
 .navbar {
-    background-color: #EAF6F6;
-    height: 10%;
+background-color: #EAF6F6;
+height: 10%;
 }
 
-
-/* Middle Container  */
+/* IDs  */
 #about {
     margin: 10% auto 0 auto;
 }
@@ -114,39 +115,36 @@ a:hover {
 
 /* ************Contact and Footer ************  */
 
-
 #contact {
     margin: 50px auto 100px auto
 }
 
-.contact-top {
-    margin: 40px auto 5% auto;
+.contact-coffee{
+    width: 45%;
+    margin: 0 auto -5% auto;
+    text-align: center;
     z-index: 1;
-    width: 60%;
 }
-
-
 .contact-row {
-    padding: 0 0 5% 0;
-    /* margin-bottom: -10%; */
-    /* background-color: #ffffff; */
+    width: 80%;
+    margin: 5% auto;
+    text-align: left;
+    z-index: 1;
 }
 
-.email-section {
-    text-align: left;
-    margin-left: 20%;
-    padding-top: 5%;
+.contact-thanks {
+    width: 40%;
 }
 
-.form {
-    text-align: left;
-    padding-top: 5%;
+.form-section {
+    width: 40%;
 }
+
+/* Footer  */
 
 .footer-section {
     background-color: #66BFBF;
-    /* margin: 10% 0 0 0;
-    padding: 3% 0 3% 0; */
+
 }
 
 .copyright {
@@ -155,40 +153,34 @@ a:hover {
     padding: 20px 0;
 }
 
-.contact-row {
-    padding: 5% 0 10% 0;
-}
 
-.contact-message {
-    width: 40%;
-    margin: 40px auto 60px;
-}
-
-#contact {
-    margin: 50px auto 100px auto
-}
 
 /* ************Images************  */
 .top-cloud {
     position: absolute;
-    right: 300px;
-    top: 100px;
+    right: 15%;
+    margin-top: 3%;
 
 }
 
 .bottom-cloud {
     position: absolute;
-    left: 300px;
-    bottom: 300px;
+    left: 20%;
+    margin-top: 3%;
 
 }
 
 .contact-top-cloud {
-    margin: 5% 40% 5% 0;
+    position: absolute;
+    right: 20%;
+    margin-top: 3%;
+
 }
 
 .contact-bottom-cloud {
-    margin: 0 0 0 40%;
+    position: absolute;
+    left: 15%;
+    margin-top: 5%;
 }
 
 
@@ -209,7 +201,7 @@ a:hover {
     margin-right: 30px;
 }
 
-.hat-img {
+.fa-fire-alt {
     width: 25%;
     float: right;
     margin-left: 30px;
@@ -231,9 +223,7 @@ a:hover {
 }
 
 .contact-mountain {
-    position: absolute;
-    margin: -10% 35% 20% 30%;
-    width: auto;
+z-index: 0;
 }
 
 /* ************Buttons************  */
@@ -331,19 +321,13 @@ a:hover {
     }
 
     .contact-top-cloud {
-        margin-top: 5%
+        margin-top: 2%;
+        margin-right: -2%;
     }
 
     .contact-bottom-cloud {
-        position: absolute;
-        margin: -5% 0 0 20%;
-    }
+        margin-top: 18%
 
-
-    .contact-message {
-        width: 75%;
-        margin-bottom: 5%;
-        z-index: 1;
     }
 
 
@@ -353,13 +337,12 @@ a:hover {
         margin-top: 15%;
     }
 
-    .contact-message {
+    .contact-coffee{
         width: 75%;
-
     }
 }
-    @media (min-width: 922px) and (max-width: 1266px) {
-        .navbar {
-            height: 3%;
-        }
+@media (min-width: 922px) and (max-width: 1266px) {
+    .navbar {
+        height: 3%    
     }
+}
