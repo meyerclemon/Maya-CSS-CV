@@ -148,30 +148,30 @@ a:hover {
 }
 
 /* Form Template */
-/*---------------------------------------------*/
+  /*---------------------------------------------*/
 
 
 input.input1 {
     height: 50px;
     border-radius: 25px;
     padding: 0 30px;
-}
-
-textarea.input1 {
+  }
+  
+  textarea.input1 {
     min-height: 150px;
     border-radius: 25px;
     padding: 12px 30px;
-}
-
-/*---------------------------------------------*/
-.wrap-input1 {
+  }
+  
+  /*---------------------------------------------*/
+  .wrap-input1 {
     position: relative;
     width: 100%;
     z-index: 1;
     margin-bottom: 20px;
-}
-
-.input1 {
+  }
+  
+  .input1 {
     display: block;
     width: 100%;
     /* background: #e6e6e6; */
@@ -179,9 +179,9 @@ textarea.input1 {
     font-size: 15px;
     line-height: 1.5;
     color: #666666;
-}
-
-/*---------------------------------------------*/
+  }
+  
+  /*---------------------------------------------*/
 
 
 .footer-section {
@@ -245,8 +245,6 @@ textarea.input1 {
     z-index: 1;
 }
 
-
-
 .social-icon {
     margin: 15px 10px;
     color: #66BFBF;
@@ -295,82 +293,78 @@ textarea.input1 {
 
 
 @media (max-width: 992px) {
-    h1 {
-        font-size: 7rem;
-    }
+h1 {
+    font-size: 7rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+h5 {
+    font-size: 2rem;
+}
 
-    h2 {
-        font-size: 3rem;
-    }
+p {
+    font-size:2rem;
+}
+.top-container {
+    padding-top: 15%;
+}
 
-    h3 {
-        font-size: 2.5rem;
-    }
+.middle-container {
+    margin-top: 0;
+}
 
-    h5 {
-        font-size: 2rem;
-    }
+.bottom-container {
+    padding-top: 5%;
+}
 
-    p {
-        font-size: 2rem;
-    }
+.navbar {
+    background-color: transparent;
+}
 
-    .top-container {
-        padding-top: 15%;
-    }
+.profile {
+    width: 75%;
+    margin: 10% auto;
+}
 
-    .middle-container {
-        margin-top: 0;
-    }
+.profile-img {
+    margin-bottom: 10%;
+    width: 50%;
+}
 
-    .bottom-container {
-        padding-top: 5%;
-    }
+.skill-row {
+    width: 75%;
+}
 
-    .navbar {
-        background-color: transparent;
-    }
-
-    .profile {
-        width: 75%;
-        margin: 10% auto;
-    }
-
-    .profile-img {
-        margin-bottom: 10%;
-        width: 50%;
-    }
-
-    .skill-row {
-        width: 75%;
-    }
-
-    .contact-bottom-cloud {
-        position: absolute;
-        margin: 0 0 0 15%;
-    }
+.contact-bottom-cloud {
+position: absolute;
+margin: 0 0 0 15%;
+} 
 
 
-    .container-contact1 {
-        padding: 90px 80px 88px 90px;
-    }
+  .container-contact1 {
+    padding: 90px 80px 88px 90px;
+  }
 
 }
 
 @media (max-width: 768px) {
-    .container-contact1 {
-        padding: 90px 80px 88px 80px;
-    }
+  .container-contact1 {
+    padding: 90px 80px 88px 80px;
+  }
 
-    .contact1-form {
-        width: 100%;
-    }
+  .contact1-form {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
-    .container-contact1 {
-        padding: 90px 15px 88px 15px;
-    }
+  .container-contact1 {
+    padding: 90px 15px 88px 15px;
+  }
 
-
+  
 }
