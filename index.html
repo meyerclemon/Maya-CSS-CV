@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title> Maya Medina Frame</title>
+  <title> Maya C Frame</title>
   <link rel="icon" href="css/images/MLogoV_11999E.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
@@ -20,6 +20,11 @@
   </script>
   <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css">
+  <!-- JQuery  -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <!-- Javascript  -->
+  <script src="js/main.js"></script>
+
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/c6efdf5960.js" crossorigin="anonymous"></script>
@@ -28,7 +33,9 @@
 <!-- Body  -->
 
 <body class="container-fluid">
-  <div class="navbar navbar-expand-lg navbar-light">
+
+  <!-- Navigation Bar  -->
+  <div class="navbar fixed-top navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="#">
       <img src="css/images/MLogoV_66BFBF.png" alt="" height="25px"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -60,9 +67,13 @@
       <img src="css/images/mountain.png" alt="mountain-img">
     </div>
   </div>
+
+  <!-- Middle Container  -->
   <hr id="about">
   <div class="row">
     <div class="middle-container ">
+
+      <!-- Profile -->
       <div class="profile">
         <img class="profile-img" src="css/images/Maya-circle-cropped - Copy.png" alt="Maya pic">
 
@@ -102,84 +113,102 @@
 
 
 
-  <!-- Bottom Container  -->
-  <hr >
+  <!-- Contact Me  -->
 
-    <section class="bottom-container container-fluid" id="contact">
 
-      <img class="contact-top-cloud" src="css/images/white-cloud.png" alt="white-cloud-img">
-      <img class="contact-bottom-cloud" src="css/images/white-cloud.png" alt="white-cloud-img">
 
-      <div class="row">
-        <div class="col contact-coffee">
+
+  <section class="bottom-container" id="contact">
+
+    <img class="contact-top-cloud" src="css/images/cloud.png" alt="cloud-img">
+    <div class="row contact-top contact-message">
       <h2>Get In Touch</h2>
+
       <h5>I'd love to hear from you!</h5>
-      
-      <p > Talking about design over coffee is one of my favorite things. Whether you are seeking
-        design work, looking to collaborate, or just want someone to bounce ideas off of, I’d love to connect with you.</p>
+      <p> Talking about projects over coffee is one of my favorite things. Whether you are seeking
+        a developer, looking to collaborate, or just want someone to bounce ideas off of, I’d love to connect with you.
+      </p>
     </div>
-
-  </div>
-
-  <div class="container-fluid">
-  <div class="row contact-below">
-        <div class="col-lg-6">
-        <div class="contact-row">
-          <div class="contact-thanks">
+    <img class="contact-bottom-cloud" src="css/images/cloud.png" alt="cloud-img">
+    <div class="row contact-row container-fluid">
+      <!-- Email Me  -->
+      <div class="col-lg-6">
+        <div class="email-section">
 
           <h2>Contact</h2>
-          <p>Thanks for reaching out. Use the contact form to send direct message, or use your method of choice:</p>
-          <i class="social-icon fas fa-envelope-square">
-            <a class="link" href="mailto:mayacframe@gmail.com"></a>
+          <p>Thanks for reaching out. Use the contact form to send a direct message, or use your method of choice:</p>
 
-          </i>
-          <a href="https://www.linkedin.com/in/mayacframe/">
-            <i class=" fab fa-linkedin-in"></i></a>
+          <div class="social-links">
+            <i class="social-icon fas fa-envelope-square fa-2x">
+              <a class="link" href="mailto:mayacframe@gmail.com"></a>
 
-          <!-- GitHub  -->
-          <a href="https://github.com/meyerclemon">
-            <i class="social-icon fab fa-github"></i></a>
+            </i>
+            <a href="https://www.linkedin.com/in/mayacframe/">
+              <i class=" fab fa-linkedin-in fa-2x"></i></a>
 
-          <!-- Personal Site  -->
-          <i class="social-icon m-icon" href="#"></i><img class="social-icon m-icon"
-            src="css/images/MLogoV_66BFBF.png" width="15px">
-        </div>
-        </div>  
-        </div>
+            <!-- GitHub  -->
+            <!-- <a href="https://github.com/meyerclemon">
+            <i class="social-icon fab fa-github fa-2x"></i></a> -->
 
-
-      <!-- <div class="col-lg-6"> -->
-        <div class="col-lg-6">
-        <div class="contact-row">
-          <div class="form-section">
-
-            <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-              <label for="floatingInput">Email address</label>
-            </div>
-            <div class="form-floating">
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-              <label for="floatingTextarea">Comments</label>
-            </div>
-            <button class="btn btn-primary" type="submit">Submit</button>
-
+            <!-- Personal Site  -->
+            <!-- <i class="social-icon m-icon" href="#"></i><img
+            class="social-icon m-icon" src="css/images/MLogoV_66BFBF.png" width="30px"> -->
           </div>
         </div>
-</div>
-</div>
-<img class="contact-mountain" src="css/images/grey-mountain.png" alt="grey-mountain-img">
+      </div>
 
-</div>
+      <!---------------------Form Template---------------------------->
+      <div class="col-lg-6">
+        <div class="form-section">
+          <div class="form-floating mb-3">
+            <div class="contact1">
+              <div class="container-contact1">
+                <form class="contact1-form validate-form">
+
+                  <div class="wrap-input1 validate-input" data-validate="Name is required">
+                    <input class="input1 name" type="text" name="name" placeholder="Name">
+                  </div>
+
+                  <div class="wrap-input1 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                    <input class="input1 email" type="text" name="email" placeholder="Email">
+                  </div>
+
+                  <div class="wrap-input1 validate-input" data-validate="Subject is required">
+                    <input class="input1 subject" type="text" name="subject" placeholder="Subject">
+                  </div>
+
+                  <div class="wrap-input1 validate-input" data-validate="So what's up?">
+                    <textarea class="input1 message" name="message" placeholder="Message"></textarea>
+                  </div>
+                  <div class="status">
+
+                  </div>
+
+                  <button class="btn btn-primary submit" type="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---------------------Old Form---------------------------->
+
+      <!-- <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Comments</label>
+          </div> -->
+
+
+      <!---------------------Footer---------------------------->
 
       <div class="footer-section">
         <p class="copyright">© 2020 Maya Frame.</p>
-</div>
-    </section>   <!-- bottom-container div -->
-    </div>    <!-- row div  -->
+      </div>
 
-
-
-
+  </section>
 
 </body>
 
