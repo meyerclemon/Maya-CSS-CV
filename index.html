@@ -20,6 +20,11 @@
   </script>
   <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css">
+  <!-- JQuery  -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <!-- Javascript  -->
+  <script src="js/main.js"></script>
+
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/c6efdf5960.js" crossorigin="anonymous"></script>
@@ -51,7 +56,7 @@
       </ul>
     </div>
   </div>
-<!-- Top Container  -->
+  <!-- Top Container  -->
   <div class="row">
     <div class="top-container">
       <img class="top-cloud" src="css/images/cloud.png" alt="cloud-img">
@@ -72,10 +77,10 @@
         <img class="profile-img" src="css/images/Maya-circle-cropped - Copy.png" alt="Maya pic">
 
         <h2>Hello.</h2>
-        <p>I am a well-rounded nerd with a spectactular attitude. 
+        <p>I am a well-rounded nerd with a spectactular attitude.
           I like to build things.</p>
-          <p>My life-long passions include writing, designing clever furniture, and trying to become a better human.</p>
-        
+        <p>My life-long passions include writing, designing clever furniture, and trying to become a better human.</p>
+
       </div>
       <hr id="skills">
       <div class="skills">
@@ -83,17 +88,23 @@
         <div class="skill-row">
           <i class="fas fa-code fa-5x"></i>
           <h3>Web Development</h3>
-          <p>I fell in love with programming by accident and now it's my favorite way to build stuff. The challenges are interesting and absorbing; creating elegant solutions is intensely rewarding; communicating their workings is gratifying. I even discovered a knack for technical writing along the way!
+          <p>I fell in love with programming by accident and now it's my favorite way to build stuff. The challenges are
+            interesting and absorbing; creating elegant solutions is intensely rewarding; communicating their workings
+            is gratifying. I even discovered a knack for technical writing along the way!
           </p>
         </div>
         <div class="skill-row">
-          <i class="fas fa-fire-alt fa-5x"></i>          <h3>Self-Direction & Teamwork</h3>
-          <p>A decade as a Chef de Cuisine Française developed my abilities as a cooperative, results-oriented creator. Excelling both independently and on a team, I demonstrated meticulous preparation, effective communication, and a powerful sense of urgency.</p>
+          <i class="fas fa-fire-alt fa-5x"></i>
+          <h3>Self-Direction & Teamwork</h3>
+          <p>A decade as a Chef de Cuisine Française developed my abilities as a cooperative, results-oriented creator.
+            Excelling both independently and on a team, I demonstrated meticulous preparation, effective communication,
+            and a powerful sense of urgency.</p>
         </div>
         <div class="skill-row">
           <i class="fas fa-eye fa-5x"></i>
           <h3>Perspective</h3>
-          <p>Open-minded and adaptive, I tend to find a unique approach to most problems. This has made me a popular sounding board.  </p>
+          <p>Open-minded and adaptive, I tend to find a unique approach to most problems. This has made me a popular
+            sounding board. </p>
         </div>
       </div>
     </div>
@@ -110,16 +121,16 @@
 
     <img class="contact-top-cloud" src="css/images/cloud.png" alt="cloud-img">
     <div class="row contact-top contact-message">
-    <h2>Get In Touch</h2>
-    
-    <h5>I'd love to hear from you!</h5>
-    <p > Talking about design over coffee is one of my favorite things. Whether you are seeking
-      design work, looking to collaborate, or just want someone to bounce ideas off of, I’d love to connect with you.
-    </p>
-  </div>
-  <img class="contact-bottom-cloud" src="css/images/cloud.png" alt="cloud-img">
+      <h2>Get In Touch</h2>
+
+      <h5>I'd love to hear from you!</h5>
+      <p> Talking about projects over coffee is one of my favorite things. Whether you are seeking
+        a developer, looking to collaborate, or just want someone to bounce ideas off of, I’d love to connect with you.
+      </p>
+    </div>
+    <img class="contact-bottom-cloud" src="css/images/cloud.png" alt="cloud-img">
     <div class="row contact-row container-fluid">
-         <!-- Email Me  -->
+      <!-- Email Me  -->
       <div class="col-lg-6">
         <div class="email-section">
 
@@ -131,44 +142,71 @@
               <a class="link" href="mailto:mayacframe@gmail.com"></a>
 
             </i>
-          <a href="https://www.linkedin.com/in/mayacframe/">
-            <i class=" fab fa-linkedin-in fa-2x"></i></a>
-    
-          <!-- GitHub  -->
-          <a href="https://github.com/meyerclemon">
-            <i class="social-icon fab fa-github fa-2x"></i></a>
-    
-          <!-- Personal Site  -->
-          <i class="social-icon m-icon" href="#"></i><img
-            class="social-icon m-icon" src="css/images/MLogoV_66BFBF.png" width="30px">
+            <a href="https://www.linkedin.com/in/mayacframe/">
+              <i class=" fab fa-linkedin-in fa-2x"></i></a>
+
+            <!-- GitHub  -->
+            <!-- <a href="https://github.com/meyerclemon">
+            <i class="social-icon fab fa-github fa-2x"></i></a> -->
+
+            <!-- Personal Site  -->
+            <!-- <i class="social-icon m-icon" href="#"></i><img
+            class="social-icon m-icon" src="css/images/MLogoV_66BFBF.png" width="30px"> -->
+          </div>
         </div>
       </div>
-      </div>
 
+      <!---------------------Form Template---------------------------->
       <div class="col-lg-6">
         <div class="form-section">
           <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <div class="contact1">
+              <div class="container-contact1">
+                <form class="contact1-form validate-form">
+
+                  <div class="wrap-input1 validate-input" data-validate="Name is required">
+                    <input class="input1 name" type="text" name="name" placeholder="Name">
+                  </div>
+
+                  <div class="wrap-input1 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                    <input class="input1 email" type="text" name="email" placeholder="Email">
+                  </div>
+
+                  <div class="wrap-input1 validate-input" data-validate="Subject is required">
+                    <input class="input1 subject" type="text" name="subject" placeholder="Subject">
+                  </div>
+
+                  <div class="wrap-input1 validate-input" data-validate="So what's up?">
+                    <textarea class="input1 message" name="message" placeholder="Message"></textarea>
+                  </div>
+                  <div class="status">
+
+                  </div>
+
+                  <button class="btn btn-primary submit" type="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---------------------Old Form---------------------------->
+
+      <!-- <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">Email address</label>
           </div>
           <div class="form-floating">
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
             <label for="floatingTextarea">Comments</label>
-          </div>
-          <button class="btn btn-primary" type="submit">Submit</button>
-        </div>
+          </div> -->
+
+
+      <!---------------------Footer---------------------------->
+
+      <div class="footer-section">
+        <p class="copyright">© 2020 Maya Frame.</p>
       </div>
-    </div>
 
-
-    <!-- Social Links  -->
-    <div class="footer-section">
-
-      <!-- LinkedIn -->
-      
-
-      <p class="copyright">© 2020 Maya Frame.</p>
-    </div>
   </section>
 
 </body>
