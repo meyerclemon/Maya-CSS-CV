@@ -1,27 +1,29 @@
 body {
     text-align: center;
+    font-family: 'Raleway', serif;
+    text-align: center;
+    color: #40514E;
     margin: 0;
 }
 
 h1 {
+    color: #66BFBF;
+    font-size: 5.625rem;
     margin: 50px auto 0 auto;
     font-family: 'Sacramento', cursive;
-    font-size: 6rem;
-    color: #66BFBF;
 }
 
 h2 {
     color: #66BFBF;
     font-family: 'Quicksand', sans-serif;
     font-size: 2.5rem;
-    font-weight: regular;
+    font-weight: normal;
     padding-bottom: 10px;
-
 }
 
 h3 {
-    font-family: 'Quicksand', sans-serif;
     color: #11999E;
+    font-family: 'Quicksand', sans-serif;
 }
 
 h4 {
@@ -32,11 +34,12 @@ h4 {
 h5 {
     font-weight: 500;
     color: #11999E;
+    padding-bottom: 10px;
 }
 
 
 p {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     line-height: 2;
 }
 
@@ -64,8 +67,7 @@ a:hover {
 
 .top-container {
     background-color: rgb(219, 247, 250);
-    position: relative;
-    padding-top: 150px;
+    padding-top: 5%;
 }
 
 
@@ -74,18 +76,16 @@ a:hover {
 }
 
 .bottom-container {
-    /* padding-top:250px; */
+    background-color: rgb(219, 247, 250);
 
 }
 
 .col-lg-6 {
-    margin-top: 12%;
     z-index: 1;
 }
 
-.col-lg-12 {
-    background-color: rgb(219, 247, 250);
-padding-top: 100px;
+.col {
+    padding-top: 100px;
     z-index: 1;
 }
 
@@ -96,8 +96,8 @@ padding-top: 100px;
 
 /* ************Navigation Bar************  */
 .navbar {
-background-color: #EAF6F6;
-height: 10%;
+    background-color: rgb(219, 247, 250);
+    width: 100%;
 }
 
 /* IDs  */
@@ -115,29 +115,29 @@ height: 10%;
 
 /* ************Contact and Footer ************  */
 
-#contact {
-    margin: 50px auto 100px auto
-}
 
-.contact-coffee{
-    width: 45%;
-    margin: 0 auto -5% auto;
+.contact-coffee {
+    max-width: 65%;
+    margin: 0 auto 4% auto;
     text-align: center;
     z-index: 1;
 }
+
 .contact-row {
-    width: 80%;
-    margin: 5% auto;
-    text-align: left;
+    width: 90%;
+    margin: auto auto -50% auto;
     z-index: 1;
+    text-align: left;
 }
 
 .contact-thanks {
-    width: 40%;
+margin-left: 15%
 }
 
 .form-section {
-    width: 40%;
+    padding-top: 3%;
+    margin-right: 15%;
+    /* width: 85%; */
 }
 
 /* Footer  */
@@ -173,14 +173,16 @@ height: 10%;
 .contact-top-cloud {
     position: absolute;
     right: 20%;
-    margin-top: 3%;
+    margin-top: 10%;
+    z-index: 0;
 
 }
 
 .contact-bottom-cloud {
     position: absolute;
-    left: 15%;
-    margin-top: 5%;
+    left: 23%;
+    margin-top: 28%;
+    z-index: 0;
 }
 
 
@@ -205,7 +207,6 @@ height: 10%;
     width: 25%;
     float: right;
     margin-left: 30px;
-    z-index: 1;
 }
 
 .social-icon {
@@ -213,17 +214,14 @@ height: 10%;
     color: #66BFBF;
 }
 
-/* .social-links {
-    margin-left: -50px;
-} */
-
 .m-icon {
     margin: 15px 10px;
     padding-bottom: 12px;
 }
 
 .contact-mountain {
-z-index: 0;
+    /* position: absolute; */
+    z-index: 0;
 }
 
 /* ************Buttons************  */
@@ -287,7 +285,7 @@ z-index: 0;
     }
 
     .top-container {
-        padding-top: 15%;
+        padding-top: 5%;
     }
 
     .middle-container {
@@ -299,11 +297,7 @@ z-index: 0;
     }
 
     .col-lg-6 {
-        margin-top: 0;
-    }
-
-    .navbar {
-        background-color: transparent;
+        /* margin: auto; */
     }
 
     .profile {
@@ -321,28 +315,46 @@ z-index: 0;
     }
 
     .contact-top-cloud {
-        margin-top: 2%;
-        margin-right: -2%;
+        right: 15%;
+        margin-top: 15%;
+
     }
 
     .contact-bottom-cloud {
-        margin-top: 18%
-
+        left: 15%;
+        margin-top: 60%;
     }
 
+    /* .contact-mountain {
+        margin-top: -150%
+    } */
 
-    .email-section {
-        width: 50%;
-        margin-left: 10%;
-        margin-top: 15%;
+    .contact-coffee {
+        max-width: 60%;
+        margin: auto 20% -15% 20%;
+        text-align: left;
     }
 
-    .contact-coffee{
-        width: 75%;
+    .contact-below {
+        margin-top: 20%;
     }
-}
-@media (min-width: 922px) and (max-width: 1266px) {
-    .navbar {
-        height: 3%    
+
+    .contact-row {
+        margin: auto;
+        max-width: 100%;
+    }
+    .contact-thanks {
+        text-align: right;
+    }
+    .contact-thanks p {
+        text-align: left;
+    }
+    .social-icon {
+        margin: 15px 10px;
+        text-align: right;
+    }
+    
+    .form-section {
+        text-align: right;
     }
 }
