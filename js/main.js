@@ -15,24 +15,32 @@ $(document).ready(function() {
         if(name.length > 0) {
             console.log("Name is valid") 
         } else {
+            event.preventDefault()
             console.log("Name field cannot be empty")
+            $("#name").text("Name field cannot be empty")
         }
 
         if(email.length > 5 && email.includes("@") && email.includes(".")) {
             console.log("Email is valid")
         } else {
+            event.preventDefault()
             console.log("Email is not valid")
+            $("#email").text("Email address is invalid")
         }
 
         if(subject.length > 0) {
-            console.log("Status is valid") 
+            console.log("Subject is valid") 
         } else {
-            console.log("Status field cannot be empty")
+            event.preventDefault()
+            console.log("Subject field cannot be empty")
+            $("#subject").text("Subject field cannot be empty")
         }
         if(message.length > 0) {
             console.log("Message is valid") 
         } else {
+            event.preventDefault()
             console.log("Message field cannot be empty")
+            $("#message").text("Message field cannot be empty")
         }
 
     })
